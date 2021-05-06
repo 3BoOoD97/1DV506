@@ -1,0 +1,27 @@
+package assign4;
+
+
+import java.io.File;
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Testing {
+    public static void main(String[] args) throws IOException {
+
+        File inputFile = new File("C:\\Users\\abodn70\\1DV506\\src\\assign4\\Copy.txt");
+
+        Scanner sc = new Scanner(inputFile, "ISO-8859-1");
+
+        if(sc.hasNext()){
+            System.out.println("*****");
+            String next = sc.nextLine();
+            System.out.println(next);
+        }
+        else if (!sc.hasNext())
+        {
+            System.out.println("+++++++");
+        }
+        System.out.println("-----");
+        sc.close();
+    }
+}
